@@ -1,3 +1,5 @@
+#include <ButtonHandler.h>
+
 #include <SineWave.h>
 #include <SoftSynth.h>
 
@@ -23,7 +25,8 @@ int counter = 0;
 
 void loop() {
   int button1 = digitalRead(buttonPin1);
-  if (button1) return;
+  if (button1)
+    return;
   
   counter += stride;
   
